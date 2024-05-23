@@ -26,9 +26,10 @@ const Item = ({ item }) => {
 	};
 	
 	const handleSave = () => {
-		updateTodo(item.id, text);
-		setIsEdit(false);
+		updateTodo(item.id, text); // Make sure this updates the state
+		setIsEdit(false); // This should trigger a re-render
 	};
+	
 	
 	const handleCancel = () => {
 		setText(item.text);

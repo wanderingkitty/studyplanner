@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { splitTodosIntoDays } from './list';
 
 describe('splitTodosIntoDays', () => {
-	it('should split todos into days correctly', () => {
+	it('should split todos into days', () => {
 		const todos = [
 			{ text: 'Todo 1', day: 'må' },
 			{ text: 'Todo 2', day: 'ti' },
