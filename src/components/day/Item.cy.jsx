@@ -32,21 +32,7 @@ describe('Item', () => {
 	it('toggles the completion status of the item when checkbox is clicked', () => {
 		cy.get('input[type="checkbox"]').click();
 	});
-	
-	
-	// it('saves the edited text when save is clicked', () => {
-	// 	cy.get('.edit-icon').click();
-	// 	const updatedText = 'Updated Task Text';
-	// const todosSnapshot = useStore.getState().todos
-	// const updatedTodo = todosSnapshot.find(todo => todo.id === testItem.id )
-	// expect(updatedTodo.text).to.equal('Göra klart inlämning')
-	// 	cy.get('input[type="text"]').clear().type(updatedText);
-	// 	cy.get('.save-btn').contains('Spara').click();
-	// 	cy.get('label').should('contain', updatedText);
-	// 	cy.get('input[type="text"]').should('not.exist');
-	// });
-	
-	
+
 	it('can edit todo', () => {
 		cy.mount(<Item item={todoItem} />);
 		cy.get('.edit-icon').contains('✍️').click();
